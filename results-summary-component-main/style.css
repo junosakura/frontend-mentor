@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: "Hanken Grotesk";
+	font-weight: 500;
+	font-display: swap;
+	src: url("./assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Hanken Grotesk";
+	font-weight: 700;
+	font-display: swap;
+	src: url("./assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Hanken Grotesk";
+	font-weight: 800;
+	font-display: swap;
+	src: url("./assets/fonts/static/HankenGrotesk-ExtraBold.ttf") format("truetype");
+}
+
+body {
+	margin: 0;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	width: 375px;
+	margin: 0 auto;
+	background-color: hsl(0, 0%, 100%);
+	color: hsl(224, 30%, 27%);
+	font-size: 18px;
+	font-family: "Hanken Grotesk", sans-serif;
+	line-height: 1;
+}
+
+.result {
+	background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+	border-radius: 0 0 32px 32px;
+	text-align: center;
+}
+
+.result-heading {
+	margin: 26px 0 0;
+	color: hsl(241, 100%, 89%);
+	font-size: 1em;
+	font-weight: 500;
+	text-shadow: 0 0 1px hsl(224, 30%, 27%);
+}
+
+.result-score {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: .5em;
+	width: 140px;
+	margin: 27px auto 0;
+	aspect-ratio: 1 / 1;
+	box-sizing: border-box;
+	border-radius: 100%;
+	background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.result-score-num {
+	margin: 10px 0 0;
+	color: hsl(0, 0%, 100%);
+	font-size: 55px;
+	font-weight: bold;
+	text-shadow: 0 0 1px hsl(224, 30%, 27%);
+}
+
+.result-score-max {
+	margin: 1px 0 0;
+	color: hsla(241, 100%, 89%, .5);
+	font-size: 16px;
+}
+
+.result-evaluation {
+	margin: 27px 6px 0 0;
+	color: hsl(0, 0%, 100%);
+	font-size: 24px;
+	text-shadow: 0 0 1px hsl(224, 30%, 27%);
+}
+
+.result-comment {
+	margin: 12px 48px 40px;
+	color: hsl(241, 100%, 89%);
+	font-size: 15px;
+	text-shadow: 0 0 1px hwb(224 19% 65%);
+	line-height: 1.4;
+	letter-spacing: .5px;
+}
+
+.summary {
+	padding: 0 30px;
+}
+
+.summary-heading {
+	margin: 27px 2px;
+	font-size: 1em;
+	font-weight: 800;
+}
+
+.summary-items {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.summary-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 17px 16px 19px;
+	border-radius: 10px;
+}
+
+#Reaction {
+	background-color: hsla(0, 100%, 67%, .05);
+	color: hsl(0, 100%, 67%);
+}
+
+#Memory {
+	background-color: hsla(39, 100%, 56%, .05);
+	color: hsl(39, 100%, 56%);
+}
+
+#Verbal {
+	background-color: hsla(166, 100%, 37%, .05);
+	color: hsl(166, 100%, 37%);
+}
+
+#Visual {
+	background-color: hsla(234, 85%, 45%, .05);
+	color: hsl(234, 85%, 45%);
+}
+
+.summary-label {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.summary-label-icon {
+	vertical-align: middle;
+}
+
+.summary-label-text {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.summary-score {
+	display: flex;
+	gap: 8px;
+	font-size: 16px;
+	font-weight: 800;
+}
+
+.summary-score-num {
+	color: hsl(224, 30%, 27%);
+}
+
+.summary-score-max {
+	color: hsla(224, 30%, 27%, .5);
+}
+
+.summary-button {
+	display: block;
+	margin: 24px 0 30px;
+	padding: 20px 0 18px;
+	border-radius: 30px;
+	background-color: hsl(224, 30%, 27%);
+	color: hsl(0, 0%, 100%);
+	text-align: center;
+	text-decoration: none;
+}
+
+.summary-button:hover,
+.summary-button:focus {
+	outline: 0;
+	background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media screen and (min-width: 768px) {
+
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100svh;
+		background-color: #fff;
+	}
+
+	.app {
+		flex-direction: row;
+		width: 736px;
+		height: 514px;
+		border-radius: 32px;
+		box-shadow: 0 32px 64px 8px hsla(234, 85%, 45%, .075);
+	}
+
+	.result {
+		width: 368px;
+		border-radius: 32px;
+	}
+	
+	.result-heading {
+		margin: 43px 4px 0 0;
+		font-size: 24px;
+	}
+
+	.result-score {
+		width: 200px;
+		margin: 36px auto 0;
+	}
+
+	.result-score-num {
+		font-size: 72px;
+	}
+
+	.result-score-max {
+		margin: 0;
+		font-size: 18px;
+	}
+
+	.result-evaluation {
+		margin: 36px 4px 0 0;
+		font-size: 32px;
+	}
+
+	.result-comment {
+		margin: 20px 60px 40px;
+		font-size: 17px;
+	}
+
+	.summary {
+		flex: auto;
+	}
+
+	.summary-heading {
+		margin: 45px 10px 30px;
+		font-size: 24px;
+	}
+
+	.summary-items {
+		margin: 0 10px;
+	}
+
+	.summary-label-text {
+		font-size: 18px;
+	}
+
+	.summary-score {
+		font-size: 18px;
+	}
+
+	.summary-button {
+		margin: 40px 10px 0;
+	}
+
+}

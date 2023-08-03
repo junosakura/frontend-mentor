@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Frontend Mentor | Results summary component</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="app">
+			<header class="result">
+				<h1 class="result-heading">Your Result</h1>
+				<div class="result-score">
+					<span class="result-score-num"></span>
+					<span class="result-score-max">of 100</span>
+				</div>
+				<div class="result-evaluation">Great</div>
+				<div class="result-comment">You scored higher than 65% of the people who have taken these tests.</div>
+			</header>
+			<main class="summary">
+				<h2 class="summary-heading">Summary</h2>
+				<div class="summary-items">
+					<template class="summary-template">
+						<div class="summary-item">
+							<div class="summary-label">
+								<img class="summary-label-icon" alt="">
+								<span class="summary-label-text"></span>
+							</div>
+							<div class="summary-score">
+								<span class="summary-score-num"></span>
+								<span class="summary-score-max">/ 100</span>
+							</div>
+						</div>
+					</template>
+				</div>
+				<a class="summary-button" href="#">Continue</a>
+			</main>
+		</div>
+	</body>
+</html>
