@@ -34,10 +34,8 @@ Users should be able to:
 
 ### Links
 
-<!--TODO-->
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/results-summary-component-solution-ZX39JsXiNx](https://www.frontendmentor.io/solutions/results-summary-component-solution-ZX39JsXiNx)
+- Live Site URL: [https://results-summary-component-solution.onrender.com/](https://results-summary-component-solution.onrender.com/)
 
 ## My process
 
@@ -56,12 +54,6 @@ fetch("data.json")
 ```
 
 ### Continued development
-
-<!--TODO-->
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 - I want to be able to use proper HTML elements.
 - I want to be able to faithfully reproduce the design.
