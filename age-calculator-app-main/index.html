@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Frontend Mentor | Age calculator app</title>
+		<link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png">
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<main class="app">
+			<form class="form" id="form">
+				<div class="form-main">
+					<div class="form-block">
+						<label class="form-label" for="inputDay">DAY</label>
+						<input class="form-input" id="inputDay" type="text" placeholder="DD">
+						<div class="form-error" id="errorDay" hidden></div>
+					</div>
+					<div class="form-block">
+						<label class="form-label" for="inputMonth">MONTH</label>
+						<input class="form-input" id="inputMonth" type="text" placeholder="MM">
+						<div class="form-error" id="errorMonth" hidden></div>
+					</div>
+					<div class="form-block">
+						<label class="form-label" for="inputYear">YEAR</label>
+						<input class="form-input" id="inputYear" type="text" placeholder="YYYY">
+						<div class="form-error" id="errorYear" hidden></div>
+					</div>
+				</div>
+				<div class="form-footer">
+					<input class="form-submit" id="submit" type="image" src="./assets/images/icon-arrow.svg" alt="Submit">
+				</div>
+			</form>
+			<div class="result">
+				<div class="result-block">
+					<span class="result-num" id="resultYear">--</span>
+					<span class="result-text">years</span>
+				</div>
+				<div class="result-block">
+					<span class="result-num" id="resultMonth">--</span>
+					<span class="result-text">months</span>
+				</div>
+				<div class="result-block">
+					<span class="result-num" id="resultDay">--</span>
+					<span class="result-text">days</span>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

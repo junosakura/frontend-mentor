@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+	src: url("./assets/fonts/Poppins-Italic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+	src: url("./assets/fonts/Poppins-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+	src: url("./assets/fonts/Poppins-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 800;
+	font-style: italic;
+	font-display: swap;
+	src: url("./assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+}
+
+:root {
+	--color-active: hsl(259, 27%, 52%);
+	--color-purple: hsl(259, 100%, 65%);
+	--color-light-red: hsl(0, 100%, 67%);
+	--color-white: hsl(0, 0%, 100%);
+	--color-off-white: hsl(0, 0%, 94%);
+	--color-light-gray: hsl(0, 0%, 86%);
+	--color-smokey-gray: hsl(0, 1%, 44%);
+	--color-off-black: hsl(0, 0%, 8%);
+}
+
+html {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 375px;
+	min-height: 812px;
+	background-color: var(--color-off-white);
+	font-family: "Poppins", sans-serif;
+	line-height: 1;
+}
+
+body {
+	margin: 0;
+}
+
+.app {
+	width: 343px;
+	margin-top: -150px;
+	padding: 48px 24px;
+	border-radius: 24px 24px 96px 24px;
+	box-sizing: border-box;
+	background-color: var(--color-white);
+}
+
+.form-main {
+	display: grid;
+	grid: auto / repeat(3, 1fr);
+	gap: 15px;
+}
+
+.form-block {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.form-label {
+	color: var(--color-smokey-gray);
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+
+.form-input {
+	width: 100%;
+	padding: 10px 15px;
+	border: 1px solid var(--color-light-gray);
+	border-radius: 8px;
+	box-sizing: border-box;
+	color: var(--color-off-black);
+	font-family: inherit;
+	font-size: 20.5px;
+	font-weight: 800;
+}
+
+.form-input:focus {
+	outline: 0;
+	border-color: var(--color-active);
+	caret-color: var(--color-active);
+}
+
+.form-input::placeholder {
+	color: var(--color-smokey-gray);
+	opacity: .8;
+}
+
+.form-error {
+	color: var(--color-light-red);
+	font-size: 14px;
+	font-style: italic;
+}
+
+.form-footer {
+	position: relative;
+	height: 128px;
+}
+
+.form-footer::before {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 0;
+	margin: 0;
+	border: 0;
+	border-top: 3px solid var(--color-off-white);
+}
+
+.form-submit {
+	position: absolute;
+	top: calc(50% - 32px);
+	left: calc(50% - 32px);
+	width: 64px;
+	height: 64px;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 100%;
+	background-color: var(--color-purple);
+}
+
+.form-submit:hover,
+.form-submit:focus {
+	outline: 0;
+	background-color: var(--color-off-black);
+}
+
+.error .form-label {
+	color: var(--color-light-red);
+}
+
+.error .form-input {
+	border-color: var(--color-light-red);
+}
+
+.result {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin: 4px 0;
+	font-size: 56px;
+	font-weight: 800;
+	font-style: italic;
+}
+
+.result-block {
+	display: flex;
+	gap: 10px;
+}
+
+.result-num {
+	color: var(--color-purple);
+	letter-spacing: -1px;
+}
+
+.result-text {
+	color: var(--color-off-black);
+	letter-spacing: -2px;
+}
+
+@media screen and (min-width: 768px) {
+
+	html {
+		min-width: 1440px;
+		min-height: 960px;
+	}
+
+	.app {
+		width: 840px;
+		margin-top: 0;
+		padding: 59px 56px;
+	}
+
+	.form-main {
+		width: 544px;
+		gap: 30px;
+	}
+
+	.form-block {
+		gap: 12px;
+	}
+
+	.form-label {
+		font-size: 14.5px;
+	}
+
+	.form-input {
+		padding: 11px 24px;
+		font-size: 32px;
+		font-weight: 700;
+	}
+
+	.form-footer {
+		margin: -15px 0;
+	}
+
+	.form-submit {
+		top: calc(50% - 48px);
+		left: calc(100% - 96px);
+		width: 96px;
+		height: 96px;
+		padding: 26px;
+	}
+
+	.result {
+		font-size: 106px;
+	}
+
+	.result-block {
+		gap: 0;
+	}
+
+	.result-num {
+		letter-spacing: 16px;
+	}
+
+	.result-text {
+		margin-left: -8px;
+	}
+
+}
