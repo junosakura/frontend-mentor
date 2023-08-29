@@ -41,7 +41,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/result-summary-made-with-fetch-grid-flexbox-sass-QM4dcjOnMB](https://www.frontendmentor.io/solutions/result-summary-made-with-fetch-grid-flexbox-sass-QM4dcjOnMB)
+- Solution URL: [https://www.frontendmentor.io/solutions/age-calculator-app-by-vanilla-js-PRxm2AOgoP](https://www.frontendmentor.io/solutions/age-calculator-app-by-vanilla-js-PRxm2AOgoP)
 - Live Site URL: [https://age-calculator-app-egdn.onrender.com/](https://age-calculator-app-egdn.onrender.com/)
 
 ## My process
