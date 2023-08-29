@@ -211,6 +211,7 @@ body {
 		width: 840px;
 		margin-top: 0;
 		padding: 59px 56px;
+		border-radius: 24px 24px 200px 24px;
 	}
 
 	.form-main {
